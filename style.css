@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightcyan; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-form {
+    background: linear-gradient(135deg, #ffffff, #d4eaf7); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    padding: 50px;
+    margin: 20px;
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: #28a745; /* Green color for button */
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    width: 50%;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.contact-form button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Add subtle animation to inputs */
+.contact-form input,
+.contact-form textarea {
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    transform: scale(1.02);
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}
